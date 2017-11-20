@@ -2,26 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Дверь на дачу
+    <title>Portofino
     </title>
   <link href="./css/common.css" rel="stylesheet"><link href="./css/index.css" rel="stylesheet"></head>
   <body class="page-index">
     <div class="wrapper">
-      <div class="portfolio">Portfolio</div>
-      <div class="back">
-        <div class="back__line-top"></div>
-        <div class="back__line-bottom"></div><a class="back__arrow" herf="javascript:;"></a>
-      </div>
-      <div class="sort" data-{adasd}>
-        <ul class="sort__list">
-          <div class="sort__arr"></div>
-          <li class="sort__item active"><a class="sort__link" href="javascript:;" data-id="1">2017</a></li>
-          <li class="sort__item"><a class="sort__link" href="javascript:;">2016</a></li>
-          <li class="sort__item"><a class="sort__link" href="javascript:;">2015</a></li>
-          <li class="sort__item"><a class="sort__link" href="javascript:;">2014</a></li>
-        </ul>
-        <div class="sort__line"></div>
-      </div>
+<div class="portfolio">Portfolio</div>
+<div class="back">
+  <div class="back__line-top"></div>
+  <div class="back__line-bottom"></div><a class="back__arrow" herf="javascript:;" onclick="window.history.go(-1); return false;"></a>
+</div>
+<div class="sort" data-{adasd}>
+  <ul class="sort__list filters-group-wrap filter-options">
+    <div class="sort__arr"></div>
+    <li class="sort__item active"><a class="sort__link" href="javascript:;" data-group="2017" data-id="1">2017</a></li>
+    <li class="sort__item"><a class="sort__link" href="javascript:;" data-group="2016">2016</a></li>
+    <li class="sort__item"><a class="sort__link" href="javascript:;" data-group="2015">2015</a></li>
+    <li class="sort__item"><a class="sort__link" href="javascript:;" data-group="2014">2014</a></li>
+  </ul>
+  <div class="sort__line"></div>
+</div>
+      <div class="content__huge-num" id="js-huge-num">01</div>
 <!-- header-->
 <header class="header">
   <div class="shell">
@@ -32,121 +33,499 @@
           <div class="header__subtitle">web development</div>
         </div>
         <nav class="nav" data-SCROLLBAR>
-          <ul class="nav__list">
-            <li class="nav__item active"><a>Web</a></li>
-            <li class="nav__item"><a>mobile</a></li>
-            <li class="nav__item"><a>program</a></li>
-            <li class="nav__item"><a>design</a></li>
-            <li class="nav__item"><a>video</a></li>
-            <li class="nav__item"><a>photo</a></li>
-            <li class="nav__item"><a>3d</a></li>
-          </ul>
+          <div class="nav__scrollbar">
+            <div class="handle"></div>
+          </div>
+          <div class="nav__list owl-carousel"><a class="nav__item active" href="javascript:;" data-menuId="01" data-group="web">Web</a><a class="nav__item" href="javascript:;" data-menuId="02" data-group="mobile">mobile</a><a class="nav__item" href="javascript:;" data-menuId="03" data-group="program">program</a><a class="nav__item" href="javascript:;" data-menuId="04" data-group="design">design</a><a class="nav__item" href="javascript:;" data-menuId="05" data-group="video">video</a><a class="nav__item" href="javascript:;" data-menuId="06" data-group="photo">photo</a><a class="nav__item" href="javascript:;" data-menuId="07" data-group="3d">3d</a></div>
         </nav>
       </div>
     </div>
   </div>
 </header>
 <!-- eof header-->
-      <div class="user-block">
-        <form class="lang">
-          <label class="lang__radio" for="option-two">
-            <input type="radio" name="optionsRadios" value="option1" checked=""><i></i>EN
-          </label>
-          <label class="lang__radio" for="option-three">
-            <input type="radio" name="optionsRadios" value="option2"><i></i>RU
-          </label>
-        </form>
-        <div class="sound"></div>
+<div class="user-block">
+  <div class="shell">
+    <div class="my-vision">
+      <div class="my-vision__text">
+         M<span>y</span>.</div>
+      <div class="my-vision__text">V<span>i</span></div>
+    </div>
+    <div class="make-order">make order<i></i></div>
+    <div class="switcher">
+      <form class="lang">
+        <input id="toggle" type="checkbox" name="optionsRadios" value="option1" checked="">
+        <div class="pointer"></div>
+        <label class="label" for="toggle"><i></i></label>
+      </form>
+    </div>
+    <div class="sound">
+      <div class="speaker"></div>
+      <audio id="player">
+        <source src="http://madperfect.com/audio/explosion.mp3" type="audio/mp3">
+        <source src="http://madperfect.com/audio/explosion.ogg" type="audio/ogg">
+      </audio>
+    </div>
+  </div>
+</div>
+<div class="content slider">
+  <div class="shell">
+    <div class="content__item-list">
+      <div class="frame" id="main-slider">
+        <ul class="clearfix">
+          <li data-date-created="2017-06-29" data-groups="[&quot;web&quot;,&quot;mobile&quot;,&quot;2017&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
       </div>
-      <div class="content">
-        <div class="content__item-list">
-          <div class="frame" id="my-product-slider">
-            <ul class="clearfix">
-              <li>
-                <div class="content__item animated">
-                  <div class="content__container">
-                    <aside class="aside">
-                      <div class="aside__content">
-                        <div class="aside__title">Lorem ipsum </div>
-                        <div class="aside__subtitle">dolor sit amet,</div>
-                        <div class="aside__subtitle">consectetur adipiscing elit.</div>
-                      </div>
-                    </aside><img class="content__image" src="images/item-image.jpg" alt="">
-                    <div class="desc">
-                      <div class="desc__outer">
-                        <div class="desc__main-title">portofino</div>
-                        <div class="desc__subtitle">beach resort</div>
-                      </div>
-                      <ul class="desc__list split-list">
-                        <li class="desc__item"> Lorem ipsum</li>
-                        <li class="desc__item"> Donec pharetra</li>
-                        <li class="desc__item"> Nunc porta</li>
-                        <li class="desc__item"> Nullam sed</li>
-                        <li class="desc__item"> Quisque viverra </li>
-                        <li class="desc__item"> Vestibulum porta</li>
-                      </ul>
-                    </div>
-                    <div class="bordered"></div>
-                    <div class="bordered-arrowed">
-                      <div class="bordered-arrowed__top-line"></div>
-                      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="javascript:;">view more</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="content__item animated">
-                  <div class="content__container">
-                    <aside class="aside">
-                      <div class="aside__content">
-                        <div class="aside__title">Lorem ipsum </div>
-                        <div class="aside__subtitle">dolor sit amet,</div>
-                        <div class="aside__subtitle">consectetur adipiscing elit.</div>
-                      </div>
-                    </aside><img class="content__image" src="images/item-image.jpg" alt="">
-                    <div class="desc">
-                      <div class="desc__outer">
-                        <div class="desc__main-title">portofino</div>
-                        <div class="desc__subtitle">beach resort</div>
-                      </div>
-                      <ul class="desc__list split-list">
-                        <li class="desc__item"> Lorem ipsum</li>
-                        <li class="desc__item"> Donec pharetra</li>
-                        <li class="desc__item"> Nunc porta</li>
-                        <li class="desc__item"> Nullam sed</li>
-                        <li class="desc__item"> Quisque viverra </li>
-                        <li class="desc__item"> Vestibulum porta</li>
-                      </ul>
-                    </div>
-                    <div class="bordered"></div>
-                    <div class="bordered-arrowed">
-                      <div class="bordered-arrowed__top-line"></div>
-                      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="javascript:;">view more</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>3</li>
-              <li>4</li>
-            </ul>
-          </div>
-          <div class="scrollbar">
-            <div class="handle">
-              <div class="mousearea"></div>
-            </div>
-          </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2017-06-29" data-groups="[&quot;design&quot;,&quot;mobile&quot;,&quot;2017&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2017-06-29" data-groups="[&quot;program&quot;,&quot;photo&quot;,&quot;2017&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2017-06-29" data-groups="[&quot;mobile&quot;,&quot;design&quot;,&quot;2017&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2017-06-29" data-groups="[&quot;mobile&quot;,&quot;3d&quot;,&quot;2017&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2016-06-29" data-groups="[&quot;nature&quot;,&quot;design&quot;,&quot;2016&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2016-06-29" data-groups="[&quot;3d&quot;,&quot;program&quot;,&quot;2016&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2016-06-29" data-groups="[&quot;3d&quot;,&quot;mobile&quot;,&quot;2016&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2016-06-29" data-groups="[&quot;3d&quot;,&quot;mobile&quot;,&quot;2015&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2015-06-29" data-groups="[&quot;nature&quot;,&quot;3d&quot;,&quot;2015&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+          <li data-date-created="2015-06-29" data-groups="[&quot;mobile&quot;,&quot;3d&quot;,&quot;2015&quot;]">
+<div class="content__item animated">
+  <div class="content__container">
+    <aside class="aside">
+      <div class="aside__content">
+        <div class="aside__title">Lorem ipsum </div>
+        <div class="aside__subtitle">dolor sit amet,</div>
+        <div class="aside__subtitle">consectetur adipiscing elit.</div>
+      </div>
+    </aside>
+    <div class="desc">
+      <div class="desc__outer">
+        <div class="desc__main-title">portofino</div>
+        <div class="desc__subtitle">beach resort</div>
+      </div>
+      <ul class="desc__list split-list">
+        <li class="desc__item"> Lorem ipsum</li>
+        <li class="desc__item"> Donec pharetra</li>
+        <li class="desc__item"> Nunc porta</li>
+        <li class="desc__item"> Nullam sed</li>
+        <li class="desc__item"> Quisque viverra </li>
+        <li class="desc__item"> Vestibulum porta</li>
+      </ul>
+    </div><img class="content__image" src="images/item-image.jpg" alt="">
+    <div class="desc__text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. 
+      <div class="view-more__content">More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod nulla vitae sem blandit, id interdum magna porttitor. </div>
+    </div>
+    <div class="bordered"></div>
+    <div class="bordered-arrowed">
+      <div class="bordered-arrowed__top-line"></div>
+      <div class="bordered-arrowed__bottom-line"></div><a class="content__more" href="/product.html">view more</a>
+    </div>
+  </div>
+</div>
+<div class="view-more"> 
+  <div class="view-more__title">view more</div>
+</div>
+          </li>
+        </ul>
+      </div>
+      <div class="scrollbar">
+        <div class="handle">
+          <div class="mousearea"></div>
+        </div>
+        <div class="scrollbar__count">
+          <div class="scrollbar__curr">01</div>
+          <div class="scrollbar__total">115</div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="shell">
-          <ul class="footer__menu">
-            <li class="footer__item"> <a href="javascript:;">Home</a><i></i></li>
-            <li class="footer__item active"> <a href="javascript:;">Projects </a><i></i></li>
-            <li class="footer__item"> <a href="javascript:;">About us</a><i></i></li>
-            <li class="footer__item"> <a href="javascript:;">Contacts</a><i></i></li>
-          </ul>
-        </div>
-      </footer>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__balls"><i></i><i></i><i></i></div>
+    <ul class="footer__menu">
+      <li class="footer__item"> <a href="javascript:;">Home</a><i></i></li>
+      <li class="footer__item active"> <a href="javascript:;">Projects </a><i></i></li>
+      <li class="footer__item"> <a href="javascript:;">About us</a><i></i></li>
+      <li class="footer__item"> <a href="javascript:;">Contacts</a><i></i></li>
+    </ul>
+  </div>
+</footer>
     </div>
   <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>
 </html>
